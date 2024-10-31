@@ -73,7 +73,7 @@ function CreateOrder() {
 
           </div>
           {!position.latitude && !position.longitude &&
-            <span className="absolute right-[3px]">
+            <span className="absolute right-[3px] top-[3px] md:top-[5px] md:right-[5px]">
               <Button type='small' onClick={handleGetAddress}>{
                 status === 'idle' ? 'Get Address'
                   : status === 'error' ? 'Error ❌'
